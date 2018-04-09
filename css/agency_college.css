@@ -1,0 +1,159 @@
+
+.more{
+	display: none;
+}
+#end{
+	display: none;
+	color: #858585;
+	text-align: center;
+	margin:10px 0;
+}
+.college_list>.ex_list{
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding:0 8px;
+	font-size: 12px;
+	/*background-color: #eee;*/
+}
+.college_list .ex_list .row:first-child{
+	position: relative;
+	/*background-color: #eee;*/
+}
+.college_list .row .col-xs-6,.college_list .row .col-xs-5{
+	padding-left:0;
+	padding-right: 0;
+	
+}
+
+.college_list .row .center_list{
+	position: absolute;
+	top:0;
+	left: 50%;
+}
+
+
+.college_list .row .col-xs-5 ul{
+	padding-left: 10px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	
+}
+.college_list .row .col-xs-5 ul .zh_name{
+	font-weight: bold;
+	color: #ff5105;
+}
+.college_list .row .col-xs-12 p{
+	display: inline-block;
+	border: 1px dashed #ff5105;
+	padding: 1px 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #ff5105;
+}
+.college_list .row .col-xs-12 p#p_heart{
+	color: #666;
+	border:none;
+}
+.college_list .row .col-xs-12 p#p_heart i{
+	color: red;
+	margin-right: 5px;
+}
+.college_list .row .absolute{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-top: 6%;
+	padding-left: 10px;
+	color: red;
+}
+.college_list .row .absolute span{
+	margin-right: 5px;
+}
+
+@media only screen and (min-width:650px) {
+    .college_list .row .col-xs-5 ul,.college_list .row .absolute{
+    	font-size: 1.5em;
+    }
+}
+.list_link{
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    margin-top: -12px;
+}
+@media only screen and (max-width:320px) {
+	.college_list .row .col-xs-5 ul,.college_list .row .absolute{
+		font-size: 12px;	
+	}
+}
+
+/*agency_collegecontent样式*/
+.college_content .col-xs-5 p{
+	margin-left: 10px;
+}
+i.fa{
+	margin-right: 5px;
+}
+.college_content .col-xs-5 p i{
+	color: #f00;
+	
+}
+.college_content .col-xs-7{
+	height: 60px;	
+	position: relative;
+}
+.college_content .col-xs-7 img{
+	max-height: 50px;
+	max-width: 215px;
+}
+.center-vertical {
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+.spot_info{
+	color: #666;
+}
+.spot_info h3,.ranking h3,.requirement h3{
+	color: #ff007e;
+}
+.spot_info table tr td:nth-child(1){
+	border-right: 1px solid #ddd;
+	color: #ff5105;
+	/*min-width: 120px;*/
+	width: 120px;
+}
+.spot_info table tr:last-child{
+	border-bottom: 1px solid #ddd;
+}
+.advantage tr td{
+	color: #666 !important;
+}
+.ranking table thead tr{
+	background-color: #f90;
+	color: #fff;
+}
+.ranking table thead tr th:nth-child(1){
+	min-width: 46px;
+}
+.ranking table tr td{
+	border-right: 1px solid #ddd;
+}
+.ranking table tr td:last-child{
+	border-right:none;
+}
+.requirement table{
+	margin-top: 5px;
+}
+.requirement table tr td:nth-child(1){
+	min-width: 46px;
+}
+.requirement table thead tr{
+	background-color: #fc0;
+}
