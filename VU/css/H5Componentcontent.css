@@ -1,0 +1,113 @@
+.h5_component_name_baseInfo input{
+	width: 90%;
+	border:1px solid #666;
+	color: #666;
+	padding:3% 5%;
+	border-radius: 5px;
+	margin-bottom: 8px;
+}
+.h5_component_name_baseInfo ul{
+	padding-left: 0px;
+}
+.h5_component_name_baseInfo button{
+	width: 100%;
+	padding:3% 5%;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #ff9c00;
+	border:1px solid #ff9c00;
+}
+.h5_component_name_rank{
+	width: 100%;
+	margin-top: 8px;
+}
+.h5_component_name_rank .con_com{
+	text-align: left;
+}
+.h5_component_name_rank .con_com h5{
+	font-size: 16px;
+	margin:0 10px;
+	line-height: 1.2em
+}
+.h5_component_name_rank .rank>div{
+	text-align: left;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.h5_component_name_rank .rank>div p{
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+.h5_component_name_rank .rank>ul{
+	text-align: left;
+	padding-left: 5%;
+	font-size: 0.12rem;
+}
+.h5_component_name_rank #wanpai div{
+	font-size: 16px;
+	line-height: 1.2em;
+	margin-top: 8px;
+}
+.h5_component_name_rank #wanpai{margin:0 20px;text-align: left;}
+.h5_component_name_rank #wanpai .major{position: relative;margin-bottom: 20px;}
+.h5_component_name_rank #wanpai .major h3{margin-top: 0px;}
+.h5_component_name_rank #wanpai .major p{margin:10px 0;font-size: 14px;}
+.h5_component_name_rank #wanpai .major:after{
+	content:"";
+	display: block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: -10px;
+	left:50%;
+	margin-left: -50%;
+	background-color: #0d6eac;
+}
+
+/*排名问题:过长的专业时*/
+.h5_component_name_rank .rank>ul>li{
+	list-style: decimal;
+    margin-bottom: 0.5em;
+    padding-right: 5px;
+    color: #0d6eac;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.h5_component_name_yaoqiu1{
+	width: 90%;
+	margin:0 auto;
+	text-align: left;
+}
+.h5_component_name_yaoqiu1 .special>ul{
+	padding-left: 0.16rem;
+	font-size: 0.16rem;
+}
+.h5_component_name_yaoqiu1 .special>ul>li{
+	list-style: disc;
+	margin-bottom: 0.5em;
+	/*color: #5136ea*/
+}
+.h5_component_name_yaoqiu1 .special>ul>li>ul li{
+	list-style: circle;
+	margin-bottom: 0.5em;
+	color: #fff;
+}
+.h5_component_name_shock_QA{
+	width: 100%;
+	left:0;
+	text-align: left;
+}
+.h5_component_name_shock_QA img{
+	width: 100%;
+}
+.h5_component_name_shock_QA p{
+	margin-left: 0.16rem;
+	color: #666;
+}
+.h5_component_name_shock_QA h4{
+
+	color: #881717;
+	margin-left: 0.16rem;
+}
+p.desc{text-align: center;margin:5px 0;}

@@ -1,0 +1,247 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+ul li{
+	list-style-type: none;
+}
+.container{
+	padding:0 10px;
+}
+.color_zhu{
+	color: #ff6600
+}
+.search_top{
+	background-color:#ff5105;
+	height: 45px;
+	line-height: 45px
+}
+.search_top .success_title{
+	font-weight: bold;
+	font-size: 18px;
+	width: 80%;
+	margin:0 auto;
+	color:#fff;
+	margin-top: 0px;
+}
+.logo_text{
+	font-size: 18px;
+	font-family: Arial;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px
+}
+.IS_logo{
+    width:35px;
+    background:#fff;
+    border-radius: 50%;
+    padding:.2em;
+    position: absolute;
+    top:5px;
+    left: 10px;
+}
+.back_page i{
+	font-size:28px;
+    color:#fff;
+    padding:.2em;
+    position: absolute;
+    top:2px;
+    left: 5px;
+}
+.search_cancel a{
+    color:#fff;
+    position: absolute;
+    top:2px;
+    right: 5px;
+    text-decoration: none;
+}
+.search_cancel a:hover{
+	color: #666;
+}
+.Personal_info i{
+	font-size:28px;
+    color:#fff;
+    padding:.2em;
+    position: absolute;
+    top:2px;
+    right: 5px;
+}
+.search_content{
+	margin-top: 20px;
+	margin-bottom: 85px;
+}
+.search_content .input-group input{
+	border:1px solid #ff6600;
+}
+.search_content .input-group-btn button{
+	background-color: #ff6600;
+	color: #fff;
+	border:1px solid #ff6600;
+}
+.search_content .search_all{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.search_content .row p{
+	margin:5px 0;
+}
+.search_filter{
+	width: 100%;
+	margin-top: 10px;
+	margin:10px auto;
+}
+.search_filter .btn_condition{
+	width: 50%;
+}
+.search_filter span{
+	vertical-align: middle;
+	margin-left: 8px;
+	color: #666;
+	font-size: 18px
+}
+/*查询结果列表*/
+/*.student_list ul{
+	padding-left: 10px;
+	position: relative;
+	
+}
+.student_list ul:nth-child(odd){
+	background: #f2f2f2;
+}
+.student_list ul:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	width: 6px;
+	height: 100%;
+	background: #ccc;
+}
+.student_list ul span{
+	color: #ff5105;
+	margin-right: 5px;
+}
+.student_list ul li{
+	margin-bottom: 8px;
+}
+.student_list ul li.zh_name{
+	font-weight: bold;
+}
+.student_list ul li.En_name{
+	color: #858585;
+}*/
+.money_right{
+	position: absolute;
+	bottom: -5px;
+	right: 2px;
+}
+.top_right{
+	position: absolute;
+	top:2px;
+	right: 2px;
+}
+.bottom_right{
+	position: absolute;
+	bottom:-6px;
+	right: 2px;
+}
+.top_right div,.bottom_right div{
+	float: left;
+	margin-left: 1px;
+	border:1px solid #666;
+	padding:5px 5px;
+	text-align: center;
+	background-color: #fff;
+}
+.bottom_right div{
+	border-radius: 5px;
+}
+.top_right div p,.bottom_right div p{
+	margin:0 0;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 5px;
+}
+.top_right div span,.bottom_right div span{
+	margin-right: 0px;
+}
+.bottom_right div span{
+	color: #fff;
+	padding:2px 10px;
+	background: #ff5105;
+	border-radius: 10px;
+}
+.course_subject span{
+	color: #858585 !important;
+}
+.course_list li a span:nth-child(2){
+	color: #000;
+}
+.course_list ul  li.En_name{
+	color: #000;
+}
+
+
+/*底部导航部分*/
+#footer_nav{
+	background-color: #fff;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	text-align: center;
+	font-size: 12px;
+	border-top:1px solid #999;
+	background-color: #fff;
+}
+#footer_nav a{
+	display: inline-block;
+	color: #ff5105;
+	min-width: 2em;
+	text-decoration: none;
+}
+
+#footer_nav .row{
+	margin-top: 0;
+	position: relative;
+}
+#footer_nav .row:after{
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top:-20px;
+	border-top:1px solid #666;
+	border-radius:100%;
+	z-index: -1;
+	margin-left: -25px;
+	/*background: url(../images/srcban.png) no-repeat;
+	background-size: 100% 100%;*/
+
+}
+#footer_nav a p{
+	margin-bottom: 5px;
+
+}
+#footer_nav a p:nth-child(2){
+	color: #666;
+	letter-spacing: 2px;
+	margin-left: 2px;
+}
+#footer_nav a:hover p:nth-child(2){
+	color: #ff5105;
+	cursor: pointer;
+}
+#footer_nav .col-xs-2{
+	margin-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
