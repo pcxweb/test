@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
 	<meta name="description" content="描述">
 	<meta itemprop="description" content="描述">
-	<title>维多利亚大学</title>
+	<title>GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包</title>
 
 	<!--载入所有资源-->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
@@ -36,14 +36,14 @@
 			background-image: url('img/bg2.png');
 		}
 		.h5_page_face{
-			background-image: url("img/face_bg.png")
+			background-image: url("img/bluebg.jpg")
 		}
 		.h5_page_yaoqiu{
 			background-image: url("img/face_bg.png");
 
 		}
 		.h5_page_foot{
-			background-image: url("img/face_bg.png")
+			background-image: url("img/bg2.png")
 		}
 		.h5_component_name_shock_rotate{
 			-webkit-animation:rotate 2s infinite 2s;
@@ -59,23 +59,32 @@
 			70%{transform: rotate(-15deg)}
 		}
 		.h5_component_name_caption{
-			width:100%;
-			background-color: #e67d5d;
-			text-align: left;
-			font-size: 0.2rem;
-			color:#fff;
-			padding:0.08rem;
-			position: absolute;
-			top:5%;
-			text-indent: 0.1rem;
+			width: 100%;
+		    background-color: #048eff;
+		    text-align: left;
+		    font-size: 0.2rem;
+		    color: #fff;
+		    /*padding: 0.08rem;*/
+		    /*position: absolute;*/
+		    top: 5%;
+		    text-indent: 1em;
+		    padding:5px 0;
+		    
 		}
 		.h5_component_name_back{
 			top:30px;
+			animation:back 2s infinite 2s;
 			-webkit-animation:back 2s infinite 2s;
 		}
 		.h5_component_name_slide_up{
 			bottom:-10px;
+			animation:up 2s infinite 2s;
 			-webkit-animation:up 2s infinite 2s;
+		}
+		.h5_component_name_music{
+			transform-origin: 50% 50%;
+			animation:music 2s infinite;
+			-webkit-animation:music 2s infinite;
 		}
 		#address{
 			width: 90%;
@@ -85,6 +94,19 @@
 		@-webkit-keyframes back{
 			50%{top:20px;}
 		}
+		@-webkit-keyframes music{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+
+		}
+		.h5_page_foot .h5_component_name_caption{color: #666;text-align: center;}
+
+		#musicAudio{
+			position: relative;
+			top:10px;
+			left:0;
+			z-index: -1;
+		}
 		
 	</style>
 </head>
@@ -93,9 +115,9 @@
 		<div class="double-bonce1"></div>
 		<div class="double-bonce2"></div>
 		<div id="rate">0%</div>
-		
+		<audio id="musicAudio" controls autoplay="true" loop="true" style="width: 0;height: 0"><source src="music/The Happy Song.mp3" type="audio/mpeg">您的浏览器不支持 audio 元素。</audio>
 	</div>
-
+	
 	<!-- 加载H5相关资源 -->
 	<script type="text/javascript">
 		var res = [
@@ -123,6 +145,13 @@
 					},
 					delay:500
 				});
+				this.addComponent('music',{
+					bg:"img/music.png",
+					css:{
+						width:'32px',height:'32px',zIndex:999,top:"10px",right:"15px"
+					},
+					delay:500
+				})
 			}
 			h5
 			.addPage("face")
@@ -135,7 +164,7 @@
 					css:{
 						opacity:0,
 						top:"5%",
-						color:"#fff"
+						color:"#666"
 					},
 					animateIn:{
 						top:"5%",
@@ -149,9 +178,8 @@
 				})
 				.addComponent('img',{
 					center:true,
-					width:"90%",
-					img2:"img/vu3-1-3.jpg",
-					img3:"img/vu3.jpg",
+					width:"95%",
+					img2:"img/111.jpg",
 					css:{
 						opacity:0
 					},
@@ -161,7 +189,7 @@
 					animateOut:{
 						opacity:0
 					},
-					delay:1000
+					delay:1666
 				})
 			.addPage()
 				.addComponent('caption',{
@@ -170,16 +198,16 @@
 				.addComponent('caption_img',{
 					width:"80%",
 					center:true,
-					bg:'img/vu3-2.jpg',
+					bg:'img/22.jpg',
 					css:{opacity:0,backgroundSize: "cover"},
 					animateIn:{opacity:1},
 					animateOut:{opacity:0}
 				})
 				.addComponent('school',{
-					width:"90%",
+					width:"88%",
 					center:true,
-					text:"维多利亚大学（VU）是一所世界级的综合性大学，在世界排名中出于稳步提升的位置。是一所拥有百年教学历史 ，同时拥有55年以上对国际学生的教育经历的教育机构。VU拥有7大学院，它们分别是：人文与教育学院，商学院，工程与科学学院，健康与生物医学学院，法学院，体育与运动科学学院，以及提供大一快捷课程，预科课程和语言预备课程的维多利亚大学学院。 VU所教授的课程种类繁多，在不同的学习阶段提供着多于450门课程，包括快捷课程阶段，本科学位与硕士学位阶段，以及博士研究生阶段。",
-					css:{opacity:0,color:"#666",fontSize:"0.14rem",textAlign:"left",lineHeight:"0.2rem"},
+					text:"维多利亚大学（VU）是一所世界级的综合性大学，在世界排名中出于稳步提升的位置。是一所拥有百年教学历史 ，同时拥有55年以上对国际学生的教育经历的教育机构。 VU所教授的课程种类繁多，在不同的学习阶段提供着多于450门课程，包括快捷课程阶段，本科学位与硕士学位阶段，以及博士研究生阶段。",
+					css:{opacity:0,color:"#666",fontSize:"16px",textAlign:"left",lineHeight:"1.5em"},
 					animateIn:{left:"50%",opacity:1},
 					animateOut:{left:"0%",opacity:0},
 					delay:800
@@ -187,8 +215,8 @@
 				.addComponent('remark',{
 					width:"100%",
 					center:true,
-					htmlstr:'<div>1916年建校 | 在校学生：超过40,000  | 国际学生人数：大约14,400 名</div>',
-					css:{opacity:0,color:"rgb(211, 5, 32)",fontSize:"0.14rem",fontWeight:"700"},
+					htmlstr:'<div>1916年建校 | 在校学生超过40,666 | 国际学生约14,400</div>',
+					css:{opacity:0,color:"rgb(211, 5, 32)",fontSize:"14px"},
 					animateIn:{opacity:1},
 					animateOut:{bottom:0,opacity:0},
 					delay:500
@@ -198,7 +226,7 @@
 					width:"100%",
 					height:"30%",
 					center:true,
-					bg:'img/vu10.jpg',
+					bg:'img/11.jpg',
 					css:{opacity:0,top:"2%"},
 					animateIn:{top:"2%",opacity:1},
 					animateOut:{top:0,opacity:0}
@@ -215,7 +243,7 @@
 					width:"100%",
 					height:"30%",
 					center:true,
-					bg:'img/vu6.jpg',
+					bg:'img/vu10.jpg',
 					css:{opacity:0,top:"2%"},
 					animateIn:{top:"2%",opacity:1},
 					animateOut:{top:0,opacity:0}
@@ -227,16 +255,67 @@
 					animateOut:{opacity:0},
 					delay:500
 				})
+			.addPage()
+				.addComponent('rank_img',{
+					width:"100%",
+					height:"30%",
+					center:true,
+					bg:'img/new1.jpg',
+					css:{opacity:0,top:"2%"},
+					animateIn:{top:"2%",opacity:1},
+					animateOut:{top:0,opacity:0}
+				})
+				.addComponent('rank',{
+					htmlstr:rank3,
+					css:{opacity:0,transitionDuration:"0.5s"},
+					animateIn:{opacity:0.8},
+					animateOut:{opacity:0},
+					delay:500
+				})
+			.addPage()
+				.addComponent('rank_img',{
+					width:"100%",
+					height:"30%",
+					center:true,
+					bg:'img/new2.jpg',
+					css:{opacity:0,top:"2%"},
+					animateIn:{top:"2%",opacity:1},
+					animateOut:{top:0,opacity:0}
+				})
+				.addComponent('rank',{
+					htmlstr:rank4,
+					css:{opacity:0,transitionDuration:"0.5s"},
+					animateIn:{opacity:0.8},
+					animateOut:{opacity:0},
+					delay:500
+				})
+			.addPage()
+				.addComponent('rank_img',{
+					width:"100%",
+					height:"30%",
+					center:true,
+					bg:'img/new3.jpg',
+					css:{opacity:0,top:"2%"},
+					animateIn:{top:"2%",opacity:1},
+					animateOut:{top:0,opacity:0}
+				})
+				.addComponent('rank',{
+					htmlstr:rank5,
+					css:{opacity:0,transitionDuration:"0.5s"},
+					animateIn:{opacity:0.8},
+					animateOut:{opacity:0},
+					delay:500
+				})
 			.addPage('foot')
 				.addComponent('caption',{
-					text:"学院特色",
+					text:"你不知道的VU事儿",
 					css:{backgroundColor:"transparent"}
 				})
 				.addComponent('list',{
 					width:"88%",
 					center:true,
 					htmlstr:teselist,
-					css:{opacity:0,color:"#fff",transform:"translateY(-50%)"},
+					css:{opacity:0,color:"#666",transform:"translateY(-50%)"},
 					animateIn:{opacity:1,},
 					animateOut:{opacity:0}
 				})
@@ -244,13 +323,13 @@
 				.addComponent('shock_img',{
 					width:"100%",
 					height:"20%",
-					bg:'img/que2.jpg',
+					bg:'img/101.jpg',
 					css:{opacity:0,top:"0.1rem",},
 					animateIn:{top:"0.1rem",opacity:1,},
 					animateOut:{top:0,opacity:0,}
 				})
 				.addComponent('shock_QA',{
-					htmlstr:"<h4>维多利亚大学的Q&A</h4><p>VU的Q&A环节就要开始了，对维多利亚大学的了解程度有多少,就看你的表现了!</p>",
+					htmlstr:"<p style='text-align:center;line-height:1.5em;'>VU的简单介绍就到这了，成为VU粉丝，后期获得更多资讯哦！</p>",
 					css:{opacity:0},
 					animateIn:{opacity:1,},
 					animateOut:{opacity:0,}
@@ -264,105 +343,33 @@
 				})
 				.addComponent('shock_dislog',{
 					width:"90%",
-					height:"34%",
+					height:"40%",
 					center:true,
 					bg:'img/char.png',
-					css:{opacity:0,color:'#000',fontSize:'0.14rem',lineHeight:'0.18rem',textAlign:'justify',backgroundSize:"100% auto"},
-					htmlstr:'<p style="padding: 10% 9% 1%;margin-bottom:0">Q&A共有5个小题完成即可获得6.66的红包。没拿够？分享朋友圈再来领取666.66的红包。</p><p class="desc">准备好了吗？</P><p class="desc">那就开始吧！</P>',
+					css:{opacity:0,color:'#666',fontSize:'17px',lineHeight:'0.18rem',textAlign:'justify',backgroundSize:"100% auto"},
+					htmlstr:'<p style="padding: 13% 9% 1%;margin-bottom:0;color: #666;text-align:center;line-height:1.5em">下个页面点提交即可成为VU粉丝并领取666红包</p><p class="desc">准备好了吗？</p><p class="desc">GOGOGO!</P>',
 					animateIn:{opacity:1},
 					animateOut:{opacity:0},
-					delay:1000
+					delay:1666
 				})
-			.addPage('qucon')
-				.addComponent('qucon_img',{
-					width:"100%",
-					center:true,
-					bg:'img/que1.jpg',
-					css:{opacity:0,backgroundSize: "cover",top:"5%"},
-					animateIn:{opacity:1},
-					animateOut:{opacity:0}
-				})
-				.addComponent('qucon_school',{
-					width:"90%",
-					center:true,
-					htmlstr:"<div>"+listcon1+"<div>",
-					css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
-					animateIn:{left:"50%",opacity:1},
-					animateOut:{left:"0%",opacity:0},
-					delay:800
-				})
-			.addPage('qucon')
-				.addComponent('qucon_img',{
-					width:"100%",
-					center:true,
-					bg:'img/vu13.jpg',
-					css:{opacity:0,backgroundSize: "cover",top:"5%"},
-					animateIn:{opacity:1},
-					animateOut:{opacity:0}
-				})
-				.addComponent('qucon_school',{
-					width:"90%",
-					center:true,
-					htmlstr:"<div>"+listcon2+"<div>",
-					css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
-					animateIn:{left:"50%",opacity:1},
-					animateOut:{left:"0%",opacity:0},
-					delay:800
-				})
-			.addPage('qucon')
-				.addComponent('qucon_img',{
-					width:"100%",
-					center:true,
-					bg:'img/que3.jpg',
-					css:{opacity:0,backgroundSize: "cover",top:"5%"},
-					animateIn:{opacity:1},
-					animateOut:{opacity:0}
-				})
-				.addComponent('qucon_school',{
-					width:"90%",
-					center:true,
-					htmlstr:"<div>"+listcon3+"<div>",
-					css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
-					animateIn:{left:"50%",opacity:1},
-					animateOut:{left:"0%",opacity:0},
-					delay:800
-				})
-			.addPage('qucon')
-				.addComponent('qucon_img',{
-					width:"100%",
-					center:true,
-					bg:'img/vu10.jpg',
-					css:{opacity:0,backgroundSize: "cover",top:"5%"},
-					animateIn:{opacity:1},
-					animateOut:{opacity:0}
-				})
-				.addComponent('qucon_school',{
-					width:"90%",
-					center:true,
-					htmlstr:"<div>"+listcon4+"<div>",
-					css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
-					animateIn:{left:"50%",opacity:1},
-					animateOut:{left:"0%",opacity:0},
-					delay:800
-				})
-			.addPage('qucon')
-				.addComponent('qucon_img',{
-					width:"100%",
-					center:true,
-					bg:'img/vu7.jpg',
-					css:{opacity:0,backgroundSize: "cover",top:"5%"},
-					animateIn:{opacity:1},
-					animateOut:{opacity:0}
-				})
-				.addComponent('qucon_school',{
-					width:"90%",
-					center:true,
-					htmlstr:"<div>"+listcon5+"<div>",
-					css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
-					animateIn:{left:"50%",opacity:1},
-					animateOut:{left:"0%",opacity:0},
-					delay:800
-				})
+			// .addPage('qucon')
+			// 	.addComponent('qucon_img',{
+			// 		width:"100%",
+			// 		center:true,
+			// 		bg:'img/vu666.jpg',
+			// 		css:{opacity:0,backgroundSize: "cover",top:"5%"},
+			// 		animateIn:{opacity:1},
+			// 		animateOut:{opacity:0}
+			// 	})
+			// 	.addComponent('qucon_school',{
+			// 		width:"90%",
+			// 		center:true,
+			// 		htmlstr:"<div>"+listcon5+"<div>",
+			// 		css:{opacity:0,fontSize:"0.16rem",textAlign:"left",lineHeight:"0.2rem",padding:" 0 2%"},
+			// 		animateIn:{left:"50%",opacity:1},
+			// 		animateOut:{left:"0%",opacity:0},
+			// 		delay:800
+			// 	})
 			.addPage('baseInfo')
 				.addComponent('caption_img',{
 					width:"100%",
@@ -397,5 +404,104 @@
 	<script type="text/javascript" src="js/Height.js"></script>
 	<script type="text/javascript" src="js/form.js"></script>
 </body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
 
+$(function(){
+	document.addEventListener('DOMContentLoaded', function() {
+
+		function audioAutoPlay() {
+			var audio = document.getElementById('musicAudio');
+			audio.play();
+			document.addEventListener("WeixinJSBridgeReady", function() {
+			audio.play();
+			}, false);
+		}
+		audioAutoPlay();
+
+	}); 
+	// 音乐图标控制音乐的播放暂停
+	var isplay = true;
+	$(".h5_component_name_music").click(function(){
+		var audio = document.getElementById('musicAudio');
+		if(isplay){
+			audio.pause();
+			isplay = false;
+			$(this).css("animation","none")
+		}else{
+			audio.play();
+			isplay = true;
+			$(this).css("animation","music 2s infinite")
+			$(this).css("-webkit-animation","music 2s infinite")
+
+
+		}
+	})
+
+
+
+	// ajax获取参数
+	var urls = window.location.href
+	$.ajax({
+		url:"http://www.geaworld.org/sign.jsp",
+		type:"get",
+		dataType:"json",
+		data:{app_url:urls},
+		success:function(data){
+			wx.config({
+			    debug: true,
+			    appId: data.appId,
+			    timestamp: data.timestamp,
+			    nonceStr: data.nonceStr,
+			    signature: data.signature,
+			    jsApiList: [
+			      'onMenuShareAppMessage',
+			      'onMenuShareTimeline'
+			    ]
+			});
+			wx.ready(function () {
+				wx.checkJsApi({
+				    jsApiList: [
+				      'onMenuShareAppMessage',
+				      'onMenuShareTimeline'
+				    ],
+				    success: function (res) {
+				      alert(JSON.stringify(res));
+				    }
+				});
+				// 发送给朋友
+				wx.onMenuShareAppMessage({
+					title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包',
+					desc: 'Today is VU Day!',
+					link: 'http://www.geaworld.org/VU/index.html',
+					imgUrl: 'http://www.geaworld.org/VU/img/666.jpg',
+					success: function (res) {
+						//alert('已分享');
+					},
+					cancel: function (res) {
+						//alert('已取消');
+					},
+					fail: function (res) {
+					alert(JSON.stringify(res));
+					}
+				});
+				// 分享到朋友圈
+				wx.onMenuShareTimeline({
+				    title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包', // 分享标题
+				    link: 'http://www.geaworld.org/VU/index.html', 
+				    imgUrl: 'http://www.geaworld.org/VU/img/666.jpg', // 分享图标
+				    success: function () {
+				    	// 用户点击了分享后执行的回调函数
+					}
+				});
+
+			});
+		}
+	})
+})
+
+			
+
+
+</script>
 </html>

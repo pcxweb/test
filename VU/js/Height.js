@@ -37,11 +37,13 @@ function bianhua(){
 	$(".fp-tableCell").css({position:"relative",top:"50%",left:"50%",transform:"translate(-50%,-50%)"});
 	//第一页
 	var titleH = ($(".h5_component_name_title").height())/h*100;
-	var beforeH = titleH+15;
-	$(".h5_component_name_img").css({top:beforeH+"%"})
+	var beforeH = titleH+5;
+	var img2H =  $(".h5_component_name_img .img2").height()/h*100;
+	var shea2h = 100-(img2H+titleH)
+	$(".h5_component_name_img").css({bottom:shea2h*0.3+"%"})
 	// $(".h5_component_name_img .img1").css({height:(100-beforeH)*0.4*h/100})
-	$(".h5_component_name_img .img2").css({height:(100-beforeH)*0.4*h/100})
-	$(".h5_component_name_img .img3").css({height:(100-beforeH)*0.5*h/100})
+	// $(".h5_component_name_img .img2").css({height:(100-beforeH)*0.4*h/100})
+	
 
 	//标题
 	var captions = $(".h5_component_name_caption");
@@ -70,24 +72,24 @@ function bianhua(){
 		$(".h5_component_name_list").eq(i).css({top:caption+10+"%"})
 		$(".h5_component_name_list").eq(i).find("div").css({marginTop:lesslon/divlen+"%"})
 	}
-
+	var rankHa = $(".h5_component_name_rank")
 	//王牌专业
-	for (var i = 0; i < 2; i++) {
+	for (var i = 0; i < rankHa.length; i++) {
 		var rankH = $(".h5_component_name_rank").eq(i).height()/h*100
 		// console.log(rankH,h)
-		$(".h5_component_name_rank_img").eq(i).css({height:(95-rankH)*0.6+"%"})
-		$(".h5_component_name_rank").eq(i).css({top:(95-rankH)*0.8+"%"})
+		$(".h5_component_name_rank_img").eq(i).css({height:(95-rankH)*0.7+"%"})
+		$(".h5_component_name_rank").eq(i).css({top:(95-rankH)*0.85+"%"})
 	}
 	
 
-	//问题
+	/* //问题
 	var ranklen = $(".h5_component_name_qucon_img");
 	for (var i = 0; i < ranklen.length; i++) {
 		var rankH = $(".h5_component_name_qucon_school").eq(i).height()/h*100
 		// console.log(rankH,h)
 		$(".h5_component_name_qucon_img").eq(i).css({height:(95-rankH)*0.6+"%"})
 		$(".h5_component_name_qucon_school").eq(i).css({top:(95-rankH)*0.8+"%"})
-	}
+	} */
 	
 	//QA,对话框
 	var shock_img = $(".h5_component_name_shock_img")

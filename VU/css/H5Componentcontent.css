@@ -18,21 +18,26 @@
 	border:1px solid #ff9c00;
 }
 .h5_component_name_rank{
-	width: 100%;
+	width: 90%;
 	margin-top: 8px;
+	margin-left: -45%;
+	left:50%;
 }
 .h5_component_name_rank .con_com{
 	text-align: left;
 }
 .h5_component_name_rank .con_com h5{
 	font-size: 16px;
-	margin:0 10px;
-	line-height: 1.2em
+	line-height: 1.2em;
+	font-weight: normal;
+	color: #0d6eac;
+	margin:5px 0;
 }
 .h5_component_name_rank .rank>div{
 	text-align: left;
 	margin-left: 10px;
-	font-size: 14px;
+	font-size: 16px;
+	color: #666;
 }
 .h5_component_name_rank .rank>div p{
 	margin-top: 0px;
@@ -42,16 +47,18 @@
 	text-align: left;
 	padding-left: 5%;
 	font-size: 0.12rem;
+	margin-bottom: 0px;
 }
 .h5_component_name_rank #wanpai div{
 	font-size: 16px;
-	line-height: 1.2em;
+	line-height: 1.5em;
 	margin-top: 8px;
+	color: #666;
 }
-.h5_component_name_rank #wanpai{margin:0 20px;text-align: left;}
-.h5_component_name_rank #wanpai .major{position: relative;margin-bottom: 20px;}
-.h5_component_name_rank #wanpai .major h3{margin-top: 0px;}
-.h5_component_name_rank #wanpai .major p{margin:10px 0;font-size: 14px;}
+.h5_component_name_rank #wanpai{text-align: left;}
+.h5_component_name_rank #wanpai .major{position: relative;margin-bottom: 20px;color: #666}
+.h5_component_name_rank #wanpai .major h3{margin-top: 0px;color: #666}
+.h5_component_name_rank #wanpai .major p{margin:10px 0;font-size: 16px;}
 .h5_component_name_rank #wanpai .major:after{
 	content:"";
 	display: block;
@@ -67,9 +74,9 @@
 /*排名问题:过长的专业时*/
 .h5_component_name_rank .rank>ul>li{
 	list-style: decimal;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
     padding-right: 5px;
-    color: #0d6eac;
+    color: #666;
     margin-left: 20px;
     font-size: 16px;
 }
@@ -94,7 +101,7 @@
 	color: #fff;
 }
 .h5_component_name_shock_QA{
-	width: 100%;
+	width: 95%;
 	left:0;
 	text-align: left;
 }
@@ -110,4 +117,4 @@
 	color: #881717;
 	margin-left: 0.16rem;
 }
-p.desc{text-align: center;margin:5px 0;}
+p.desc{text-align: center;margin:5px 0;color: #666;}

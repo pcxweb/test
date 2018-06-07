@@ -2,7 +2,7 @@
 //QS排行
 var rank = `
 	<div class="rank con_com">
-		<h5>维多利亚大学的7大学院，提供文凭课程，本科学位课程以及研究生和博士生课程。课程涵盖：</h5>
+		<h5>维多利亚大学共有6大学院，提供文凭课程，本科学位课程以及研究生和博士生课程。</h5>
 		<ul class="clearfix">
 			<li>Arts and Education</li>
 			<li>Business</li>
@@ -10,9 +10,8 @@ var rank = `
 			<li>Health and Biomedicine</li>
 			<li>Law and Justice</li>
 			<li>Sport and Exercise Science</li>
-			<li>VU College</li>
 		</ul>
-		
+		<div>VU College专门为学生提供英语预备课程以及Diploma大一文凭课程。另外，VU还设有TAFE学院(Victoria University Polytechnic)为学生提供种类繁多的职业教育与培训课程。</div>
 	</div>
 
 `
@@ -22,9 +21,47 @@ var rank2 = `<div id="wanpai">
 				<p>全澳第二的MBA课程</p>
 				<p>英语国家唯一提供皮肤科学学士学位</p>
 			</div>
-			<div>此外，维多利亚州唯一一所提供四年制工程荣誉学士课程的高等院校。商科硕士课程（企业资源策划系统）建筑工程，机械工程，IT专业 行业内有口皆碑。</div>
+			<div>此外，维多利亚大学是维州唯一一所提供四年制工程荣誉学士课程的高等院校。商科硕士课程（企业资源策划系统）建筑工程，机械工程，IT专业行业内有口皆碑。</div>
 			<div>维多利亚大学下设英文语言学院，本科预科课程，Diploma快捷课程通道，以及TAFE学院。涵盖课程内容包括商科，工科，运动科学，人文社会艺术，充分满足国际学生的不同需求。</div>
 		</div>`
+
+var rank3 = `
+	<div class="rank con_com">
+		<h5>VU工程系顶尖人才辈出！</h5>
+		<ul class="clearfix">
+			<li style="list-style:disc">工程系华人石碰教授 (Professor Peng Shi) 跻身世界最有影响力学者行列</li>
+			<li style="list-style:disc">石教授所发表的文章被引用次数位列全球第一</li>
+			<li style="list-style:disc">工程学博士Adrian Stoica 毕业后进入NASA喷气推进实验室</li>
+			<li style="list-style:disc">来VU工程系学习，就有机会得到世界顶尖学者的指点</li>
+		</ul>
+		
+	</div>
+
+`
+var rank4 = `
+	<div class="rank con_com">
+		<h5>你也是足球迷！想不想把爱好变成事业？</h5>
+		<ul class="clearfix">
+			<li style="list-style:disc">VU与墨尔本胜利足球俱乐部有逾十年的合作，将兴建一所澳洲最佳的足球学院</li>
+			<li style="list-style:disc">体育与运动科学学院拥有澳洲规模最大、最全面的体育与运动科学教学项目，包括运动康复、体育训练、体育和娱乐管理、体育商业、户外娱乐、体育发展、运动按摩和健身等。</li>
+		</ul>
+		
+	</div>
+
+`
+var rank5 = `
+	<div class="rank con_com">
+		<h5>去一趟健康与生物医学学院，你会被一排 "病号"所吸引</h5>
+		<ul class="clearfix">
+			<li style="list-style:disc">授予理论知识的同时，强调将知识应用到实践操作中</li>
+			<li style="list-style:disc">每年耗资数百万在实验室运作和器材维护中，也会做设备更新</li>
+			<li style="list-style:disc">一名合格并且优秀的护理人员，要有专业的护理知识以及拥有丰富的临床护理经验</li>
+			<li style="list-style:disc">注册护士的平均年薪为近7万澳币，护理行业的岗位需求在未来五年仍保持高增长</li>
+		</ul>
+		
+	</div>
+
+`
 // 学校特色
 var teselist = `
 		<div class="teselist">世界排名前2%（前350强）（THE World University Rankings 2018）</div>

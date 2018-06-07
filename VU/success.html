@@ -18,11 +18,13 @@
 	<script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
 	<style>
 		#success{
+			font-family:'Arial',Lato,Helvetica Neue,SimSun,Helvetica,STHeiTi,Roboto Regular,Roboto,Droid Sans,Microsoft Yahei,sans-serif;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+			color: #666;
 		}
 		#success p{
 			display: inline-block;
@@ -43,21 +45,43 @@
 
 		}
 		#myname{color: #5593c7}
+		.qrcodeWrap {
+		    position: relative; 
+		    width: 200px; 
+		    height: 200px;
+		    margin: 0 auto; 
+		    background: url(img/code.jpg) no-repeat center center;
+		    background-size: contain;
+		}
+		.qrcodeWrap img {
+		    position: absolute; left: 50%; top: 50%;
+		    width: 200px; height: 200px; 
+		    display: block;
+		    border: none;
+		    opacity: 0;    /*visibility:hidden*/
+		    margin-left: -100px;
+		    margin-top: -100px;
+		}
 	</style>
 
 </head>
 <body>
 	<div id="success">
 		<h3>恭喜<span id="myname">XXX</span>提交成功!</h3>
-		<p><span>添加下方VU小助手微信并截图发送此页面即可获得</span><span style="color:red">6.66红包</span><img src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""></p>
-		<div class="img">
+		<p><span>添加下方VU红包大使微信并截图发送此页面即可获得</span><span style="color:red">6.66红包</span><img src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""></p>
+		<!-- <div class="img">
 			<img width="80%" src="img/code.jpg" alt="">
+		</div> -->
+		<div class="qrcodeWrap">
+		    <img width="80%" src="img/code.jpg" alt="扫描二维码"/>
 		</div>
 		<p class="share">
 			<a href="index.html">回到首页</a>
-			<span>转发朋友圈并截图页面发送给VU小助手还有机会获得<span style="color:red">666.66</span>的红包哦！</span><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt="">
+			<span>转发朋友圈并截图页面发送给VU红包大使来抢<span style="color:red">666.66</span>的红包吧！</span><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt="">
 		</p>
 	</div>
+
+	<!-- <audio id="musicAudio" controls autoplay="true" loop="true"><source src="http://dl.stream.qqmusic.qq.com/C400002V8Vde2dKIEx.m4a?vkey=595439E92054D86E550A256AB6B387389E06F7C7A9DF6F73981264F6834DAC05AE625954CFE7770F4B815856B049E199407B8EB6C8F4CDFD&guid=122245366&uin=0&fromtag=66" type="audio/mpeg">您的浏览器不支持 audio 元素。</audio> -->
 	
 </body>
 <script type="text/javascript">
@@ -83,8 +107,13 @@ $(function(){
     // var aa = GetRequest(url)
     // console.log(aa)
     var canshu = getUrlArgObject();
-    console.log(canshu)
-    $("#myname").text(canshu.myname)
+    // console.log(canshu.myname)
+    if(!canshu.myname){
+    	window.location.href = "/VU/index.html"
+    }else{
+    	$("#myname").text(canshu.myname)
+    }
+   
 })
 
 </script>
