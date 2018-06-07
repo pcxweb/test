@@ -2,28 +2,43 @@
 //QS排行
 var rank = `
 	<div class="rank con_com">
-		<h5>维多利亚大学共有6大学院，提供文凭课程，本科学位课程以及研究生和博士生课程。</h5>
+		<h5>维多利亚大学共有7大学院，提供语言课程、大一文凭课程、本科和硕士学位课程，以及博士学位课程。</h5>
 		<ul class="clearfix">
-			<li>Arts and Education</li>
-			<li>Business</li>
-			<li>Engineering and Science</li>
-			<li>Health and Biomedicine</li>
-			<li>Law and Justice</li>
-			<li>Sport and Exercise Science</li>
+			<li>文学与教育学院</li>
+			<li>商学院</li>
+			<li>工程与科学学院</li>
+			<li>健康与医学学院</li>
+			<li>法学院</li>
+			<li>体育与运动学院</li>
+			<li>VU College</li>
 		</ul>
 		<div>VU College专门为学生提供英语预备课程以及Diploma大一文凭课程。另外，VU还设有TAFE学院(Victoria University Polytechnic)为学生提供种类繁多的职业教育与培训课程。</div>
 	</div>
 
 `
-var rank2 = `<div id="wanpai">
+/* var rank2 = `<div id="wanpai">
 			<div class="major">
 				<h3>王牌专业：</h3>
-				<p>全澳第二的MBA课程</p>
-				<p>英语国家唯一提供皮肤科学学士学位</p>
+				<p>MBA - 全澳排名第二</p>
+				<p>皮肤科学学士 - 全英语国家仅有VU开设</p>
 			</div>
-			<div>此外，维多利亚大学是维州唯一一所提供四年制工程荣誉学士课程的高等院校。商科硕士课程（企业资源策划系统）建筑工程，机械工程，IT专业行业内有口皆碑。</div>
-			<div>维多利亚大学下设英文语言学院，本科预科课程，Diploma快捷课程通道，以及TAFE学院。涵盖课程内容包括商科，工科，运动科学，人文社会艺术，充分满足国际学生的不同需求。</div>
-		</div>`
+			<div>VU是维多利亚州唯一一所提供四年制建筑工程本科荣誉学士的高等院校。此外，商科硕士(企业资源策划系统ERP)、旅游与酒店管理、体育管理、运动科学、信息技术等多个专业领域在行业内都有口皆碑。</div>
+			<div>VU College和TAFE学院还提供多种升学途径，以充分满足国际学生的不同需求。</div>
+		</div>` */
+var rank2 = `
+	<div class="rank con_com">
+		<h5>王牌专业：</h5>
+		<ul class="clearfix">
+			<li style="list-style:disc">商科硕士(企业资源策划系统) - 商业精英领域，多项SAP权威认证</li>
+			<li style="list-style:disc">皮肤科学学士 - 医美界最高学历</li>
+			<li style="list-style:disc">建筑工程荣誉学士 - 设计与工程巧妙融合，EA专业认证</li>
+			<li style="list-style:disc">电气与体育工程本科 - 未来需求行业，全澳唯一开设</li>
+			<li style="list-style:disc">旅游酒店管理学士 - 澳洲老牌酒管课程</li>
+		</ul>
+		
+	</div>
+
+`
 
 var rank3 = `
 	<div class="rank con_com">
@@ -67,7 +82,6 @@ var teselist = `
 		<div class="teselist">世界排名前2%（前350强）（THE World University Rankings 2018）</div>
 		<div class="teselist">“工程与科技”（Engineering & Technology）专业排名世界第151-175，维州排名第3位</div>
 		<div class="teselist">“计算机科学”（Computer Science）排名世界第151-175，维州排名第2位</div>
-		<div class="teselist">MBA工商管理硕士课程位列澳洲第二名</div>
 		<div class="teselist">以实践为导向，为不同专业的学生提供超过1000个不同的实习机会</div>`
 //问题1
 var listcon1 = `<h4>1.VU有多少个校区？（单选）</h4>

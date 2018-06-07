@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
 	<meta name="description" content="描述">
 	<meta itemprop="description" content="描述">
-	<title>GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包</title>
+	<title>维多利亚大学</title>
 
 	<!--载入所有资源-->
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
@@ -100,7 +100,9 @@
 
 		}
 		.h5_page_foot .h5_component_name_caption{color: #666;text-align: center;}
+		.h5_component_name_music2{
 
+		}
 		#musicAudio{
 			position: relative;
 			top:10px;
@@ -206,7 +208,7 @@
 				.addComponent('school',{
 					width:"88%",
 					center:true,
-					text:"维多利亚大学（VU）是一所世界级的综合性大学，在世界排名中出于稳步提升的位置。是一所拥有百年教学历史 ，同时拥有55年以上对国际学生的教育经历的教育机构。 VU所教授的课程种类繁多，在不同的学习阶段提供着多于450门课程，包括快捷课程阶段，本科学位与硕士学位阶段，以及博士研究生阶段。",
+					text:"维多利亚大学(简称VU)是一所世界级的综合性大学，在世界大学排名中处于稳步提升的位置。VU是一所拥有百年教学历史，以及55年以上国际学生教育经验的高等学府。VU教授的课程领域广泛，从预科到文凭快捷课程，从本科到硕士，再到研究生和博士，VU为不同学习阶段的学生提供了超过450门课程。",
 					css:{opacity:0,color:"#666",fontSize:"16px",textAlign:"left",lineHeight:"1.5em"},
 					animateIn:{left:"50%",opacity:1},
 					animateOut:{left:"0%",opacity:0},
@@ -441,16 +443,17 @@ $(function(){
 
 
 	// ajax获取参数
-	var urls = window.location.href
+	var urls = window.location.href;
+	console.log(urls)
 	$.ajax({
 		url:"http://www.geaworld.org/sign.jsp",
 		type:"get",
 		dataType:"json",
 		data:{app_url:urls},
 		success:function(data){
+			// console.log(data)
 			wx.config({
-			    debug: true,
-			    appId: data.appId,
+			    appId: data.appid,
 			    timestamp: data.timestamp,
 			    nonceStr: data.nonceStr,
 			    signature: data.signature,
@@ -466,7 +469,7 @@ $(function(){
 				      'onMenuShareTimeline'
 				    ],
 				    success: function (res) {
-				      alert(JSON.stringify(res));
+				      // alert(JSON.stringify(res));
 				    }
 				});
 				// 发送给朋友
@@ -474,7 +477,7 @@ $(function(){
 					title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包',
 					desc: 'Today is VU Day!',
 					link: 'http://www.geaworld.org/VU/index.html',
-					imgUrl: 'http://www.geaworld.org/VU/img/666.jpg',
+					imgUrl: 'http://www.geaworld.org/VU/img/logobgbg.jpg',
 					success: function (res) {
 						//alert('已分享');
 					},
@@ -489,7 +492,7 @@ $(function(){
 				wx.onMenuShareTimeline({
 				    title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包', // 分享标题
 				    link: 'http://www.geaworld.org/VU/index.html', 
-				    imgUrl: 'http://www.geaworld.org/VU/img/666.jpg', // 分享图标
+				    imgUrl: 'http://www.geaworld.org/VU/img/logobgbg.jpg', // 分享图标
 				    success: function () {
 				    	// 用户点击了分享后执行的回调函数
 					}

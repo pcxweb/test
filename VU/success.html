@@ -62,13 +62,152 @@
 		    margin-left: -100px;
 		    margin-top: -100px;
 		}
+		.wenzi{
+			font-size: 20px;
+			color: #ecc34d;
+			animation: change 1s  ease-in  infinite ; color:#f00; font-weight: bold
+		}
+		/*.box{ animation: change 1s  ease-in  infinite ; font-size: 36px; color:#f00; font-weight: bold}*/
+		@keyframes change {  
+            0%{ text-shadow: 0 0 4px #f00}  
+            50%{ text-shadow: 0 0 40px #f00}  
+            100%{ text-shadow: 0 0 4px #f00}  
+        } 
+        .jietu1{
+        	display: inline-block;
+	    	font-size: 20px;
+	    	/*margin: 10px;*/
+	    	background: linear-gradient(left, #f71605, #e0f513); 
+	        background: -webkit-linear-gradient(left, #f71605, #e0f513);
+	        background: -o-linear-gradient(right, #f71605, #e0f513);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation:scratchy 1s linear forwards infinite 1s;
+			/* 其它浏览器兼容性前缀 */
+		    -webkit-animation:scratchy 1s linear forwards infinite 1s;
+		    -moz-animation: scratchy 1s linear forwards infinite 1s;
+		    -ms-animation: scratchy 1s linear forwards infinite 1s;
+		    -o-animation: scratchy 1s linear forwards infinite 1s;
+        }
+        .jietu2{
+        	display: inline-block;
+	    	font-size: 20px;
+	    	/*margin: 10px;*/
+	    	background: linear-gradient(left, #f71605, #e0f513); 
+	        background: -webkit-linear-gradient(left, #f71605, #e0f513);
+	        background: -o-linear-gradient(right, #f71605, #e0f513);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation:scratchy2 1s linear forwards infinite 1s;
+			/* 其它浏览器兼容性前缀 */
+		    -webkit-animation:scratchy2 1s linear forwards infinite 1s;
+		    -moz-animation: scratchy2 1s linear forwards infinite 1s;
+		    -ms-animation: scratchy2 1s linear forwards infinite 1s;
+		    -o-animation: scratchy2 1s linear forwards infinite 1s;
+        }
+        /*闪烁2*/
+        @keyframes  scratchy {
+			0% {
+				background-position: 0 0;
+			}
+			25% {
+				background-position: 0 0;
+			}
+			26% {
+				background-position: 20px -20px;
+			}
+			50% {
+				background-position: 20px -20px;
+			}
+			51% {
+				background-position: 40px -40px;
+			}
+			75% {
+				background-position: 40px -40px;
+			}
+			76% {
+				background-position: 60px -60px;
+			}
+			99% {
+				background-position: 60px -60px;
+			}
+			100% {
+				background-position: 0 0;
+			}
+		}
+		/* 添加兼容性前缀 */
+		@-webkit-keyframes scratchy {
+		    0% {
+				background-position: 0 0;
+			}
+			25% {
+				background-position: 0 0;
+			}
+			26% {
+				background-position: 20px -20px;
+			}
+			50% {
+				background-position: 20px -20px;
+			}
+			51% {
+				background-position: 40px -40px;
+			}
+			75% {
+				background-position: 40px -40px;
+			}
+			76% {
+				background-position: 60px -60px;
+			}
+			99% {
+				background-position: 60px -60px;
+			}
+			100% {
+				background-position: 0 0;
+			}
+		}
+		 @keyframes  scratchy2 {
+			0% {
+				background-position: 0 0;
+			}
+			25% {
+				background-position: 0 0;
+			}
+			26% {
+				background-position: 60px -60px;
+			}
+			50% {
+				background-position: 60px -60px;
+			}
+			51% {
+				background-position: 100px -100px;
+			}
+			75% {
+				background-position: 100px -100px;
+			}
+			76% {
+				background-position: 150px -150px;
+			}
+			99% {
+				background-position: 150px -150px;
+			}
+			100% {
+				background-position: 0 0;
+			}
+		}
+		
 	</style>
 
 </head>
 <body>
 	<div id="success">
 		<h3>恭喜<span id="myname">XXX</span>提交成功!</h3>
-		<p><span>添加下方VU红包大使微信并截图发送此页面即可获得</span><span style="color:red">6.66红包</span><img src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""></p>
+		<p style="margin-bottom: 0px">
+			<span class="jietu jietu1">截图此页面</span>
+			<span>发送到以下VU红包大使（扫描下图添加）即可获得</span>
+			<span class="wenzi">6.66</span>
+			<span>红包</span>
+		</p>
+		<p style="margin-top: 0px;"><img src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""><img width="30" src="img/red3.png" alt=""></p>
 		<!-- <div class="img">
 			<img width="80%" src="img/code.jpg" alt="">
 		</div> -->
@@ -76,14 +215,18 @@
 		    <img width="80%" src="img/code.jpg" alt="扫描二维码"/>
 		</div>
 		<p class="share">
-			<a href="index.html">回到首页</a>
-			<span>转发朋友圈并截图页面发送给VU红包大使来抢<span style="color:red">666.66</span>的红包吧！</span><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt="">
+			<span class="jietu jietu2">转发朋友圈并截图转发页面</span>
+			<span><br>发送至VU红包大使来抢</span>
+			<span class="wenzi">666.66</span>
+			<span>的红包吧！</span>
+			<img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt=""><img  src="img/sese2.png" alt="">
 		</p>
 	</div>
 
 	<!-- <audio id="musicAudio" controls autoplay="true" loop="true"><source src="http://dl.stream.qqmusic.qq.com/C400002V8Vde2dKIEx.m4a?vkey=595439E92054D86E550A256AB6B387389E06F7C7A9DF6F73981264F6834DAC05AE625954CFE7770F4B815856B049E199407B8EB6C8F4CDFD&guid=122245366&uin=0&fromtag=66" type="audio/mpeg">您的浏览器不支持 audio 元素。</audio> -->
 	
 </body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script type="text/javascript">
 $(function(){
 
@@ -107,13 +250,75 @@ $(function(){
     // var aa = GetRequest(url)
     // console.log(aa)
     var canshu = getUrlArgObject();
-    // console.log(canshu.myname)
+    // console.log(canshu)
     if(!canshu.myname){
     	window.location.href = "/VU/index.html"
     }else{
     	$("#myname").text(canshu.myname)
     }
-   
+    // $("#myname").text(canshu.myname)
+
+
+
+
+    // ajax获取参数
+	var urls = window.location.href
+	$.ajax({
+		url:"http://www.geaworld.org/sign.jsp",
+		type:"get",
+		dataType:"json",
+		data:{app_url:urls},
+		success:function(data){
+			wx.config({
+			    appId: data.appid,
+			    timestamp: data.timestamp,
+			    nonceStr: data.nonceStr,
+			    signature: data.signature,
+			    jsApiList: [
+			      'onMenuShareAppMessage',
+			      'onMenuShareTimeline'
+			    ]
+			});
+			wx.ready(function () {
+				wx.checkJsApi({
+				    jsApiList: [
+				      'onMenuShareAppMessage',
+				      'onMenuShareTimeline'
+				    ],
+				    success: function (res) {
+				      // alert(JSON.stringify(res));
+				    }
+				});
+				// 发送给朋友
+				wx.onMenuShareAppMessage({
+					title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包',
+					desc: 'Today is VU Day!',
+					link: 'http://www.geaworld.org/VU/index.html',
+					imgUrl: 'http://www.geaworld.org/VU/img/logobgbg.jpg',
+					success: function (res) {
+						//alert('已分享');
+					},
+					cancel: function (res) {
+						//alert('已取消');
+					},
+					fail: function (res) {
+					alert(JSON.stringify(res));
+					}
+				});
+				// 分享到朋友圈
+				wx.onMenuShareTimeline({
+				    title: 'GEA史无前例 | 秒领VU6.66任性红包，绝杀666王炸红包', // 分享标题
+				    link: 'http://www.geaworld.org/VU/index.html', 
+				    imgUrl: 'http://www.geaworld.org/VU/img/logobgbg.jpg', // 分享图标
+				    success: function () {
+				    	// 用户点击了分享后执行的回调函数
+					}
+				});
+
+			});
+		}
+	})
+
 })
 
 </script>

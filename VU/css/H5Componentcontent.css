@@ -74,7 +74,7 @@
 /*排名问题:过长的专业时*/
 .h5_component_name_rank .rank>ul>li{
 	list-style: decimal;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding-right: 5px;
     color: #666;
     margin-left: 20px;
